@@ -37,6 +37,7 @@ def build_lstm_model(input_shape):
 
     # Use the TensorFlow optimizer with gradient clipping
     optimizer = tf.keras.optimizers.Adam(learning_rate=0.001, clipvalue=1.0)
+
     model.compile(optimizer=optimizer, loss='mean_squared_error')
     return model
 
@@ -93,14 +94,20 @@ if __name__ == "__main__":
     # Evaluate the model's performance
     mse = evaluate_lstm_model(model, X_test, y_test)
 
-    # Predict prices on the test set
-    X_test_reshaped = reshape_features_for_lstm(X_test)
-    predicted_prices = model.predict(X_test_reshaped)
-    predicted_prices = predicted_prices.flatten()  # Flatten if it gives a 2D array
+    try:
+        # After training and evaluating the model, predict the prices on the test set
+        # Ensure this matches expected input shape for the model
+        X_test_reshaped = reshape_features_for_lstm(X_test)
+        print("Generating predictions...")
+        predicted_prices = model.predict(X_test_reshaped)
+        predicted_prices = predicted_prices.flatten()  # Flatten array to 1D if necessary
 
-    # Save the predictions to a CSV file under 'Predictions' folder
-    predictions_df = pd.DataFrame(data=predicted_prices, columns=['Predicted'])
-    predictions_df.to_csv('Predictions/model_predictions.csv', index=False)
+        # Save the predictions into the 'Predictions' folder
+        predictions_df = pd.DataFrame(predicted_prices, columns=['Predicted'])
+        predictions_filename = 'Predictions/model_predictions.csv'
+        predictions_df.to_csv(predictions_filename, index=False)
 
-    print("Predictions have been saved to 'Predictions/model_predictions.csv'")
-    print(f"Mean Squared Error on the test set: {mse}")
+        print(f"Model predictions saved to {predictions_filename}")
+        print(predictions_df.head(5))
+    except Exception as e:
+        print(f"Failed to generate or save predictions: {e}")
