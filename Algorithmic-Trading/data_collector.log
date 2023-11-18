@@ -1,0 +1,12 @@
+2023-11-17 22:52:56,134:INFO:Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-11-17 22:52:56,134:INFO:NumExpr defaulting to 8 threads.
+2023-11-17 22:52:56,147:ERROR:An error occurred on attempt 1: [Errno 2] No such file or directory: '/mnt/data/EURUSD=X_1d_2020-01-01_2023-11-17.csv'
+2023-11-17 22:53:01,376:ERROR:An error occurred on attempt 2: [Errno 2] No such file or directory: '/mnt/data/EURUSD=X_1d_2020-01-01_2023-11-17.csv'
+2023-11-17 22:53:06,624:ERROR:An error occurred on attempt 3: [Errno 2] No such file or directory: '/mnt/data/EURUSD=X_1d_2020-01-01_2023-11-17.csv'
+2023-11-17 22:53:11,627:ERROR:All 3 download attempts failed.
+2023-11-17 22:58:08,889:INFO:Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-11-17 22:58:08,889:INFO:NumExpr defaulting to 8 threads.
+2023-11-17 22:58:08,917:INFO:Data saved to EURUSD=X_1d_2020-01-01_2023-11-17.csv
+2023-11-17 23:00:29,839:INFO:Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-11-17 23:00:29,839:INFO:NumExpr defaulting to 8 threads.
+2023-11-17 23:00:29,867:INFO:Data saved to EURUSD=X >>> 1d >>> 2020-01-01 >>> 2023-11-17.csv
