@@ -1,3 +1,7 @@
 yfinance
 pandas
 scikit-learn
+TA-Lib
+matplotlib
+numpy
+tensorflow
