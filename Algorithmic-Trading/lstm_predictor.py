@@ -9,6 +9,8 @@ from sklearn.metrics import mean_squared_error
 import tensorflow as tf
 
 #  Load datasets
+
+
 def load_data(train_features_file, train_targets_file, test_features_file, test_targets_file):
     X_train = pd.read_csv(train_features_file)
     y_train = pd.read_csv(train_targets_file)
@@ -17,10 +19,14 @@ def load_data(train_features_file, train_targets_file, test_features_file, test_
     return X_train, y_train.values.ravel(), X_test, y_test.values.ravel()
 
 # Reshape features for LSTM
+
+
 def reshape_features_for_lstm(X):
     return np.reshape(X.values, (X.shape[0], X.shape[1], 1))
 
 # Build LSTM model
+
+
 def build_lstm_model(input_shape):
     model = Sequential()
     model.add(LSTM(units=50, return_sequences=True, input_shape=input_shape))
@@ -71,21 +77,21 @@ def evaluate_lstm_model(model, X_test, y_test):
 
 
 if __name__ == "__main__":
-    train_features_file = 'scaled_train_features.csv'
-    train_targets_file = 'train_targets.csv'
-    test_features_file = 'scaled_test_features.csv'
-    test_targets_file = 'test_targets.csv'
+    train_features_file = 'TrainedAndTestData/scaled_train_features.csv'
+    train_targets_file = 'TrainedAndTestData/train_targets.csv'
+    test_features_file = 'TrainedAndTestData/scaled_test_features.csv'
+    test_targets_file = 'TrainedAndTestData/test_targets.csv'
 
     X_train, y_train, X_test, y_test = load_data(
-        'scaled_train_features.csv', 
-        'train_targets.csv', 
-        'scaled_test_features.csv', 
-        'test_targets.csv'
+        'TrainedAndTestData/scaled_train_features.csv',
+        'TrainedAndTestData/train_targets.csv',
+        'TrainedAndTestData/scaled_test_features.csv',
+        'TrainedAndTestData/test_targets.csv'
     )
-    
+
     print(f'X_train shape: {X_train.shape}')
     print(f'y_train shape: {y_train.shape}')
-    
+
     model = train_lstm_model(X_train, y_train, batch_size=64, epochs=50)
 
     mse = evaluate_lstm_model(model, X_test, y_test)

@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import talib
+from datetime import datetime
 
 # Load dataset
 def load_data(filename):
@@ -63,13 +64,14 @@ def preprocess_data(filename):
     return X_train_scaled, y_train, X_test_scaled, y_test
 
 if __name__ == "__main__":
-    filename = 'EURUSD=X >>> 1d >>> 2020-01-01 >>> 2023-11-17.csv' # replace with your CSV file
+    end_date = datetime.now().strftime('%Y-%m-%d')
+    filename = f"CurrencyData/EURUSD=X >>> 1d >>> 2010-01-01 >>> {end_date}.csv" # replace with your CSV file
     
     # Run the preprocessing
     X_train_scaled, y_train, X_test_scaled, y_test = preprocess_data(filename)
     
     # Save the preprocessed data to CSV files for later use
-    pd.DataFrame(X_train_scaled).to_csv('scaled_train_features.csv', index=False)
-    y_train.to_csv('train_targets.csv', index=False)
-    pd.DataFrame(X_test_scaled).to_csv('scaled_test_features.csv', index=False)
-    y_test.to_csv('test_targets.csv', index=False)
+    pd.DataFrame(X_train_scaled).to_csv('TrainedAndTestData/scaled_train_features.csv', index=False)
+    y_train.to_csv('TrainedAndTestData/train_targets.csv', index=False)
+    pd.DataFrame(X_test_scaled).to_csv('TrainedAndTestData/scaled_test_features.csv', index=False)
+    y_test.to_csv('TrainedAndTestData/test_targets.csv', index=False)

@@ -10,3 +10,4 @@
 2023-11-17 23:00:29,839:INFO:Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
 2023-11-17 23:00:29,839:INFO:NumExpr defaulting to 8 threads.
 2023-11-17 23:00:29,867:INFO:Data saved to EURUSD=X >>> 1d >>> 2020-01-01 >>> 2023-11-17.csv
+2023-11-18 00:52:43,934:INFO:Data saved to CurrencyData/EURUSD=X >>> 1d >>> 2010-01-01 >>> 2023-11-18.csv
