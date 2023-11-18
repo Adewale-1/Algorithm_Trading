@@ -6,7 +6,7 @@ def load_data(price_file, prediction_file):
     return prices, predictions
 
 def backtest(prices, predictions):
-    capital = 10000  # Starting capital in USD
+    capital = 100  # Starting capital in USD
     position = 0  # No position initially
     trade_log = []  # Record of trades
     
@@ -28,7 +28,7 @@ def backtest(prices, predictions):
 
 if __name__ == "__main__":
     price_file = 'TrainedAndTestData/test_targets.csv'  # File with actual prices
-    prediction_file = 'model_predictions.csv'  # File with predicted prices
+    prediction_file = 'preprocessed_data.csv'  # File with predicted prices
     prices, predictions = load_data(price_file, prediction_file)
     
     final_capital, trade_log = backtest(prices['Close'].values, predictions['Predicted'].values)
