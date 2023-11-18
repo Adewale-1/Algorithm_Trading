@@ -12,3 +12,37 @@
 2023-11-17 23:00:29,867:INFO:Data saved to EURUSD=X >>> 1d >>> 2020-01-01 >>> 2023-11-17.csv
 2023-11-18 00:52:43,934:INFO:Data saved to CurrencyData/EURUSD=X >>> 1d >>> 2010-01-01 >>> 2023-11-18.csv
 2023-11-18 01:13:33,116:INFO:Data saved to CurrencyData/EURUSD=X >>> 1d >>> 2010-01-01 >>> 2023-11-18.csv
+2023-11-18 02:55:10,094:ERROR:
+1 Failed download:
+2023-11-18 02:55:10,094:ERROR:['EURUSD=X']: Exception('%ticker%: 1h data not available for startTime=1262304000 and endTime=1700265600. The requested range must be within the last 730 days.')
+2023-11-18 02:55:10,094:ERROR:No data found for EURUSD=X at 2023-11-18 02:55:10.094423 using interval 1h.
+2023-11-18 02:55:10,094:ERROR:All 3 download attempts failed.
+2023-11-18 02:56:39,901:INFO:Data saved to CurrencyData/EURUSD=X >>> 1wk >>> 2010-01-01 >>> 2023-11-18.csv
+2023-11-18 03:00:24,802:ERROR:
+1 Failed download:
+2023-11-18 03:00:24,803:ERROR:['EURUSD=X']: Exception('%ticker%: 1h data not available for startTime=1262304000 and endTime=1700265600. The requested range must be within the last 730 days.')
+2023-11-18 03:00:24,804:ERROR:No data found for EURUSD=X at 2023-11-18 03:00:24.804257 using interval 1h.
+2023-11-18 03:00:24,804:ERROR:All 3 download attempts failed.
+2023-11-18 03:02:13,276:ERROR:
+1 Failed download:
+2023-11-18 03:02:13,277:ERROR:['EURUSD=X']: Exception('%ticker%: Invalid input - interval=60min is not supported. Valid intervals: [1m, 2m, 5m, 15m, 30m, 60m, 90m, 1h, 1d, 5d, 1wk, 1mo, 3mo]')
+2023-11-18 03:02:13,277:ERROR:No data found for EURUSD=X at 2023-11-18 03:02:13.277262 using interval 60min.
+2023-11-18 03:02:13,277:ERROR:All 3 download attempts failed.
+2023-11-18 03:02:25,874:ERROR:
+1 Failed download:
+2023-11-18 03:02:25,874:ERROR:['EURUSD']: Exception('%ticker%: No timezone found, symbol may be delisted')
+2023-11-18 03:02:25,874:ERROR:No data found for EURUSD at 2023-11-18 03:02:25.874358 using interval 1h.
+2023-11-18 03:02:25,874:ERROR:All 3 download attempts failed.
+2023-11-18 03:03:22,170:ERROR:Failed to get ticker 'EUR/USD' reason: Expecting value: line 1 column 1 (char 0)
+2023-11-18 03:03:22,176:ERROR:
+1 Failed download:
+2023-11-18 03:03:22,176:ERROR:['EUR/USD']: Exception('%ticker%: No timezone found, symbol may be delisted')
+2023-11-18 03:03:22,176:ERROR:No data found for EUR/USD at 2023-11-18 03:03:22.176630 using interval 1h.
+2023-11-18 03:03:22,176:ERROR:All 3 download attempts failed.
+2023-11-18 03:04:18,680:ERROR:
+1 Failed download:
+2023-11-18 03:04:18,680:ERROR:['GBPJPY=X']: Exception('%ticker%: 1h data not available for startTime=1262304000 and endTime=1700265600. The requested range must be within the last 730 days.')
+2023-11-18 03:04:18,680:ERROR:No data found for GBPJPY=X at 2023-11-18 03:04:18.680698 using interval 1h.
+2023-11-18 03:04:18,680:ERROR:All 3 download attempts failed.
+2023-11-18 03:04:23,856:INFO:Data saved to CurrencyData/GBPJPY=X >>> 1D >>> 2010-01-01 >>> 2023-11-18.csv
+2023-11-18 03:06:35,412:INFO:Data saved to CurrencyData/EURUSD=X >>> 1D >>> 2010-01-01 >>> 2023-11-18.csv
