@@ -94,3 +94,18 @@
 2023-11-19 00:56:29,452:INFO:Data saved to CurrencyData/EURUSD=X >>> 1h >>> 2022-01-01 >>> 2023-11-19.csv
 2023-11-19 00:57:15,279:INFO:Data saved to CurrencyData/EURUSD=X >>> 1h >>> 2022-01-01 >>> 2023-11-19.csv
 2023-11-19 01:00:02,932:INFO:Data saved to CurrencyData/EURUSD=X >>> 1h >>> 2022-01-01 >>> 2023-11-19.csv
+2023-11-19 02:08:22,607:INFO:Data saved to CurrencyData/EURUSD=X >>> 1h >>> 2022-01-01 >>> 2023-11-19.csv
+2023-11-19 02:29:36,739:ERROR:OpenAI Error: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+2023-11-19 02:36:20,523:INFO:Data with sentiment saved to EURUSD=X_2022-01-01_to_2023-11-19_1h_sentiment.csv
+2023-11-19 02:48:31,800:INFO:Data with sentiment saved to EURUSD=X_2022-01-01_to_2023-11-19_1h_sentiment.csv
+2023-11-19 02:54:54,157:INFO:Data with sentiment saved to EURUSD=X_2022-01-01_to_2023-11-19_1h_sentiment.csv
+2023-11-19 03:01:12,603:INFO:Data with sentiment saved to EURUSD=X_2022-01-01_to_2023-11-19_1h_sentiment.csv
+2023-11-19 03:05:54,042:INFO:Data with sentiment saved to EURUSD=X_2022-01-01_to_2023-11-19_1h_sentiment.csv
+2023-11-19 03:07:20,461:INFO:Data with sentiment saved to EURUSD=X_2022-01-01_to_2023-11-19_1h_sentiment.csv
+2023-11-19 03:13:40,381:INFO:Data with sentiment saved to EURUSD=X_2022-01-01_to_2023-11-19_1h_sentiment.csv
+2023-11-19 03:18:56,786:INFO:Data with sentiment saved to EURUSD=X_2022-01-01_to_2023-11-19_1h_sentiment.csv
+2023-11-19 03:20:17,061:INFO:Data with sentiment saved to EURUSD=X_2022-01-01_to_2023-11-19_1h_sentiment.csv
+2023-11-19 03:20:52,844:INFO:Data with sentiment saved to EURUSD=X_2022-01-01_to_2023-11-19_1h_sentiment.csv
+2023-11-19 03:28:54,310:INFO:Data with sentiment saved to EURUSD=X_2022-01-01_to_2023-11-19_1h_sentiment.csv
+2023-11-19 03:30:55,550:INFO:Data with sentiment saved to EURUSD=X_2022-01-01_to_2023-11-19_1h_sentiment.csv
+2023-11-19 03:31:46,025:INFO:Data with sentiment saved to EURUSD=X_2022-01-01_to_2023-11-19_1h_sentiment.csv
