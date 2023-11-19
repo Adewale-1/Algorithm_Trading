@@ -9,6 +9,8 @@ def load_data(price_file, prediction_file):
     return prices, predictions
 
 # Backtest strategy implementation
+
+
 def backtest(prices, predictions):
     capital = 100  # Starting capital
     position = 0  # Indicates no position

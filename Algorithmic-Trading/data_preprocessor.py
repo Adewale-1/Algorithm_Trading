@@ -8,7 +8,7 @@ from datetime import datetime
 
 
 def load_data(filename):
-    df = pd.read_csv(filename, index_col='Date', parse_dates=True)
+    df = pd.read_csv(filename, index_col='Datetime', parse_dates=True)
     return df
 
 # Clean data
@@ -89,7 +89,7 @@ def preprocess_data(filename):
 if __name__ == "__main__":
     end_date = datetime.now().strftime('%Y-%m-%d')
     # replace with your CSV file
-    filename = f"CurrencyData/EURUSD=X >>> 1d >>> 2010-01-01 >>> {end_date}.csv"
+    filename = f"CurrencyData/EURUSD=X >>> 1h >>> 2022-01-01 >>> {end_date}.csv"
 
     # Run the preprocessing
     X_train_scaled, y_train, X_test_scaled, y_test = preprocess_data(filename)

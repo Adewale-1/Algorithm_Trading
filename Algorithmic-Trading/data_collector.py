@@ -5,6 +5,7 @@ import sys
 import time
 import logging
 
+filePath = ""
 # Set up basic logging
 logging.basicConfig(filename='data_collector.log', filemode='a', level=logging.INFO,
                     format='%(asctime)s:%(levelname)s:%(message)s')
@@ -40,11 +41,12 @@ def download_data(currency_pair, start_date, end_date, time_interval, retries=3)
 
             # Save the DataFrame to a CSV file in the current working directory
             filename = f"CurrencyData/{currency_pair} >>> {time_interval} >>> {start_date} >>> {end_date}.csv"
+
             df.to_csv(filename)
             logging.info(f"Data saved to {filename}")
             print(f"Data saved to {filename}")
 
-            return df
+            return df, filename
         except ValueError as e:
             logging.error(e)
             print(e)
@@ -70,4 +72,6 @@ if __name__ == "__main__":
     # Get the current date as the end date
     end_date = datetime.now().strftime('%Y-%m-%d')
 
-    data = download_data(currency_pair, start_date, end_date, time_interval)
+    data, filePath = download_data(
+        currency_pair, start_date, end_date, time_interval)
+    print(filePath)

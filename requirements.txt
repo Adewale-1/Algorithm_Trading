@@ -5,3 +5,6 @@ TA-Lib
 matplotlib
 numpy
 tensorflow
+feedparser 
+openai
+python-dotenv

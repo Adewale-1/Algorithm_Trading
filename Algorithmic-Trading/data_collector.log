@@ -46,3 +46,51 @@
 2023-11-18 03:04:18,680:ERROR:All 3 download attempts failed.
 2023-11-18 03:04:23,856:INFO:Data saved to CurrencyData/GBPJPY=X >>> 1D >>> 2010-01-01 >>> 2023-11-18.csv
 2023-11-18 03:06:35,412:INFO:Data saved to CurrencyData/EURUSD=X >>> 1D >>> 2010-01-01 >>> 2023-11-18.csv
+2023-11-18 17:25:30,832:ERROR:
+1 Failed download:
+2023-11-18 17:25:30,833:ERROR:['EUR_USD']: Exception('%ticker%: No timezone found, symbol may be delisted')
+2023-11-18 17:25:30,833:ERROR:No data found for EUR_USD at 2023-11-18 17:25:30.833519 using interval H1.
+2023-11-18 17:25:30,833:ERROR:All 3 download attempts failed.
+2023-11-19 00:43:07,415:INFO:Data saved to CurrencyData/EURUSD=X >>> 1h >>> 2023-01-01 >>> 2023-11-19.csv
+2023-11-19 00:43:22,974:ERROR:
+1 Failed download:
+2023-11-19 00:43:22,975:ERROR:['EURUSD=X']: Exception('%ticker%: 1h data not available for startTime=1262304000 and endTime=1700352000. The requested range must be within the last 730 days.')
+2023-11-19 00:43:22,975:ERROR:No data found for EURUSD=X at 2023-11-19 00:43:22.975161 using interval 1h.
+2023-11-19 00:43:22,975:ERROR:All 3 download attempts failed.
+2023-11-19 00:43:38,691:ERROR:
+1 Failed download:
+2023-11-19 00:43:38,691:ERROR:['EURUSD=X']: Exception('%ticker%: 1h data not available for startTime=1356998400 and endTime=1700352000. The requested range must be within the last 730 days.')
+2023-11-19 00:43:38,691:ERROR:No data found for EURUSD=X at 2023-11-19 00:43:38.691562 using interval 1h.
+2023-11-19 00:43:38,691:ERROR:All 3 download attempts failed.
+2023-11-19 00:44:30,513:ERROR:
+1 Failed download:
+2023-11-19 00:44:30,514:ERROR:['EURUSD=X']: Exception('%ticker%: 1h data not available for startTime=1483228800 and endTime=1700352000. The requested range must be within the last 730 days.')
+2023-11-19 00:44:30,514:ERROR:No data found for EURUSD=X at 2023-11-19 00:44:30.514370 using interval 1h.
+2023-11-19 00:44:30,514:ERROR:All 3 download attempts failed.
+2023-11-19 00:44:39,085:ERROR:
+1 Failed download:
+2023-11-19 00:44:39,085:ERROR:['EURUSD=X']: Exception('%ticker%: 1h data not available for startTime=1546300800 and endTime=1700352000. The requested range must be within the last 730 days.')
+2023-11-19 00:44:39,085:ERROR:No data found for EURUSD=X at 2023-11-19 00:44:39.085617 using interval 1h.
+2023-11-19 00:44:39,085:ERROR:All 3 download attempts failed.
+2023-11-19 00:44:47,072:ERROR:
+1 Failed download:
+2023-11-19 00:44:47,072:ERROR:['EURUSD=X']: Exception('%ticker%: 1h data not available for startTime=1577836800 and endTime=1700352000. The requested range must be within the last 730 days.')
+2023-11-19 00:44:47,072:ERROR:No data found for EURUSD=X at 2023-11-19 00:44:47.072938 using interval 1h.
+2023-11-19 00:44:47,073:ERROR:All 3 download attempts failed.
+2023-11-19 00:45:03,006:ERROR:
+1 Failed download:
+2023-11-19 00:45:03,006:ERROR:['EURUSD=X']: Exception('%ticker%: 1h data not available for startTime=1609459200 and endTime=1700352000. The requested range must be within the last 730 days.')
+2023-11-19 00:45:03,006:ERROR:No data found for EURUSD=X at 2023-11-19 00:45:03.006823 using interval 1h.
+2023-11-19 00:45:03,006:ERROR:All 3 download attempts failed.
+2023-11-19 00:45:09,121:INFO:Data saved to CurrencyData/EURUSD=X >>> 1h >>> 2022-01-01 >>> 2023-11-19.csv
+2023-11-19 00:47:41,588:INFO:Data saved to CurrencyData/EURUSD=X >>> 1h >>> 2022-01-01 >>> 2023-11-19.csv
+2023-11-19 00:49:12,227:INFO:Data saved to CurrencyData/EURUSD=X >>> 1h >>> 2022-01-01 >>> 2023-11-19.csv
+2023-11-19 00:50:37,158:INFO:Data saved to CurrencyData/EURUSD=X >>> 1h >>> 2022-01-01 >>> 2023-11-19.csv
+2023-11-19 00:53:52,998:INFO:Data saved to CurrencyData/EURUSD=X >>> 1h >>> 2022-01-01 >>> 2023-11-19.csv
+2023-11-19 00:55:16,373:ERROR:An error occurred on attempt 1: [Errno 2] No such file or directory: ''
+2023-11-19 00:55:21,840:ERROR:An error occurred on attempt 2: [Errno 2] No such file or directory: ''
+2023-11-19 00:55:27,259:ERROR:An error occurred on attempt 3: [Errno 2] No such file or directory: ''
+2023-11-19 00:55:32,265:ERROR:All 3 download attempts failed.
+2023-11-19 00:56:29,452:INFO:Data saved to CurrencyData/EURUSD=X >>> 1h >>> 2022-01-01 >>> 2023-11-19.csv
+2023-11-19 00:57:15,279:INFO:Data saved to CurrencyData/EURUSD=X >>> 1h >>> 2022-01-01 >>> 2023-11-19.csv
+2023-11-19 01:00:02,932:INFO:Data saved to CurrencyData/EURUSD=X >>> 1h >>> 2022-01-01 >>> 2023-11-19.csv
